@@ -1,0 +1,28 @@
+program ex003;
+
+var n, n_anterior: longint;
+    e_valor_quadrado: boolean;
+
+begin
+    read(n);
+    
+    n_anterior:= n;
+    e_valor_quadrado:= false;
+
+    while n <> 0 do
+    begin
+        read (n);
+
+        if n = (n_anterior * n_anterior) then
+            e_valord_quadrado:= true
+        else
+            n_anterior:= n;
+    end;
+
+    if e_valor_quadrado then
+        write (1)
+    else
+        write (0);
+
+end.
+
